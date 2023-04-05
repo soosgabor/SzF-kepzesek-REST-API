@@ -1,0 +1,130 @@
+[{
+  "_id": {
+    "$oid": "5d713995b721c3bb38c1f5d0"
+  },
+  "name": "Jedlik Ányos Gépipari és Informatikai Technikum",
+  "description": "Az iskola képzési profilja, szakmai kínálata mindenkor kielégítette a felmerülő ipari igényeket. Mindig követtük a világ tudományos és technikai fejlődését. Oktatóink tapasztalata, valamint elkötelezettségük saját szakmai fejlődésük iránt, lehetővé tette, hogy az idők folyamán képzéseink szakmai tartalma és módszertana folyamatosan gazdagodjon. Mára büszkén kijelenthetem, hogy az ország legjobb technikumai között tartanak számon bennünket.",
+  "website": "https://jedlik.eu",
+  "email": "jedlik@jedlik.eu",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      17.63005,
+      47.68217
+    ],
+    "formattedAddress": "7 Szent István út, Gyor, GS 9021, HU",
+    "street": "7 Szent István út",
+    "city": "Gyor",
+    "zipcode": "9021",
+    "country": "HU"
+  },
+  "careers": [
+    "Web Development",
+    "UI/UX",
+    "Business"
+  ],
+  "photo": "no-photo.jpg",
+  "housing": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1674848081478"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "5d713a66ec8f2b88b8f830b8"
+  },
+  "name": "ModernTech Bootcamp",
+  "description": "ModernTech has one goal, and that is to make you a rockstar developer and/or designer with a six figure salary. We teach both development and UI/UX",
+  "website": "https://moderntech.com",
+  "email": "enroll@moderntech.com",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -71.3232,
+      42.64981
+    ],
+    "formattedAddress": "220 Pawtucket St, Lowell, MA 01854-3502, US",
+    "street": "220 Pawtucket St",
+    "city": "Lowell",
+    "zipcode": "01854-3502",
+    "country": "US"
+  },
+  "careers": [
+    "Web Development",
+    "UI/UX",
+    "Mobile Development"
+  ],
+  "photo": "no-photo.jpg",
+  "housing": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1674848139968"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "5d725a037b292f5f8ceff787"
+  },
+  "name": "Codemasters",
+  "description": "Is coding your passion? Codemasters will give you the skills and the tools to become the best developer possible. We specialize in full stack web development and data science",
+  "website": "https://codemasters.com",
+  "email": "enroll@codemasters.com",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      17.63867,
+      47.67912
+    ],
+    "formattedAddress": "51 Baross Gábor út, Gyor, GS 9024, HU",
+    "street": "51 Baross Gábor út",
+    "city": "Gyor",
+    "zipcode": "9024",
+    "country": "HU"
+  },
+  "careers": [
+    "Web Development",
+    "Data Science",
+    "Business"
+  ],
+  "photo": "no-photo.jpg",
+  "housing": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1674848164722"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "5d725a1b7b292f5f8ceff788"
+  },
+  "name": "Devcentral Bootcamp",
+  "description": "Is coding your passion? Codemasters will give you the skills and the tools to become the best developer possible. We specialize in front end and full stack web development",
+  "website": "https://devcentral.com",
+  "email": "enroll@devcentral.com",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      17.68808,
+      47.5788
+    ],
+    "formattedAddress": "7 Iskola utca, Nyúl, GS 9082, HU",
+    "street": "7 Iskola utca",
+    "city": "Nyúl",
+    "zipcode": "9082",
+    "country": "HU"
+  },
+  "careers": [
+    "Mobile Development",
+    "Web Development",
+    "Data Science",
+    "Business"
+  ],
+  "photo": "no-photo.jpg",
+  "housing": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1674848189677"
+    }
+  }
+}]

@@ -1,0 +1,154 @@
+[{
+  "_id": {
+    "$oid": "63d42f75935277ac4f625a6d"
+  },
+  "title": "Front End Web Development",
+  "description": "This course will provide you with all of the essentials to become a successful frontend web developer. You will learn to master HTML, CSS and front end JavaScript, along with tools like Git, VSCode and front end frameworks like Vue",
+  "weeks": 8,
+  "price": 0,
+  "minimumSkill": "beginner",
+  "training": {
+    "$oid": "5d713995b721c3bb38c1f5d0"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1674850165108"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63d42f9b935277ac4f625a6f"
+  },
+  "title": "Full Stack Web Development",
+  "description": "In this course you will learn full stack web development, first learning all about the frontend with HTML/CSS/JS/Vue and then the backend with Node.js/Express/MongoDB",
+  "weeks": 12,
+  "price": 0,
+  "minimumSkill": "intermediate",
+  "training": {
+    "$oid": "5d713995b721c3bb38c1f5d0"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1674850203746"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63d42fbd935277ac4f625a71"
+  },
+  "title": "Full Stack Web Dev",
+  "description": "In this course you will learn all about the front end with HTML, CSS and JavaScript. You will master tools like Git and Webpack and also learn C# and ASP.NET with Postgres",
+  "weeks": 10,
+  "price": 19.99,
+  "minimumSkill": "intermediate",
+  "training": {
+    "$oid": "5d713a66ec8f2b88b8f830b8"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1674850237495"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63d42fce935277ac4f625a73"
+  },
+  "title": "UI/UX",
+  "description": "In this course you will learn to create beautiful interfaces. It is a mix of design and development to create modern user experiences on both web and mobile",
+  "weeks": 12,
+  "price": 29.99,
+  "minimumSkill": "intermediate",
+  "training": {
+    "$oid": "5d713a66ec8f2b88b8f830b8"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1674850254209"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63d42fdf935277ac4f625a75"
+  },
+  "title": "Web Design & Development",
+  "description": "Get started building websites and web apps with HTML/CSS/JavaScript/PHP. We teach you",
+  "weeks": 10,
+  "price": 18.99,
+  "minimumSkill": "beginner",
+  "training": {
+    "$oid": "5d725a037b292f5f8ceff787"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1674850271744"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63d42fed935277ac4f625a77"
+  },
+  "title": "Data Science Program",
+  "description": "In this course you will learn Python for data science, machine learning and big data tools",
+  "weeks": 10,
+  "price": 24.99,
+  "minimumSkill": "intermediate",
+  "training": {
+    "$oid": "5d725a037b292f5f8ceff787"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1674850285864"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63d42ffc935277ac4f625a79"
+  },
+  "title": "Web Development",
+  "description": "This course will teach you how to build high quality web applications with technologies like React, Node.js, PHP & Laravel",
+  "weeks": 8,
+  "price": 18.99,
+  "minimumSkill": "beginner",
+  "training": {
+    "$oid": "5d725a1b7b292f5f8ceff788"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1674850300232"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63d43009935277ac4f625a7b"
+  },
+  "title": "Software QA",
+  "description": "This course will teach you everything you need to know about quality assurance",
+  "weeks": 6,
+  "price": 9.99,
+  "minimumSkill": "intermediate",
+  "training": {
+    "$oid": "5d725a1b7b292f5f8ceff788"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1674850313157"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63d43018935277ac4f625a7d"
+  },
+  "title": "IOS Development",
+  "description": "Get started building mobile applications for IOS using Swift and other tools",
+  "weeks": 8,
+  "price": 19.99,
+  "minimumSkill": "intermediate",
+  "training": {
+    "$oid": "5d725a1b7b292f5f8ceff788"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1674850328697"
+    }
+  }
+}]

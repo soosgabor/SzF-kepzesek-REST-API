@@ -15,7 +15,7 @@ const errorHandler = require('./middleware/error')
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", true);
 const mongoString = process.env.DATABASE_URL;
-mongoose.connect(mongoString);
+mongoose.connect("mongodb+srv://malagi:Jedlik123456@cluster0.knh5j.mongodb.net/soft_dev_trains");
 const database = mongoose.connection;
 
 database.on("error", (error) => {

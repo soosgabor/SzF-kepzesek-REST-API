@@ -64,7 +64,7 @@ app.use(hpp())
 // CORS engedélyezése
 app.use(cors())
 
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'public/uploads')))
 
 app.use("/api/trainings", trainings);
 app.use("/api/courses", courses);

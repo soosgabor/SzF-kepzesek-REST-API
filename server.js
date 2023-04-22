@@ -54,11 +54,7 @@ app.use(mongoSanitize())
 app.use(xss())
 
 // Biztonsági fejlécek beállítása
-app.use(helmet(
-  {
-    crossOriginResourcePolicy: false,
-  }
-))
+app.use(helmet())
 
 // Lekérésszám korlátozása
 const limiter = rateLimit({
@@ -73,7 +69,7 @@ app.use(hpp())
 // CORS engedélyezése
 app.use(cors())
 
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'public/uploads')))
 
 app.use("/api/trainings", trainings);
 app.use("/api/courses", courses);

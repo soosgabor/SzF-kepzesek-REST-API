@@ -62,9 +62,7 @@ app.use(limiter)
 app.use(hpp())
 
 // CORS engedélyezése
-app.use(cors({
-  origin: 'http://localhost:4000'
-}))
+app.use(cors())
 
 app.use(express.static(path.join(__dirname, 'public/uploads')))
 

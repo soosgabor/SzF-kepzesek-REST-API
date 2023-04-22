@@ -49,7 +49,9 @@ app.use(mongoSanitize())
 app.use(xss())
 
 // Biztonsági fejlécek beállítása
-app.use(helmet())
+app.use(helmet({
+      crossOriginResourcePolicy: false,
+    }))
 
 // Lekérésszám korlátozása
 const limiter = rateLimit({

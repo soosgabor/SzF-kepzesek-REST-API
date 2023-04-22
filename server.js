@@ -63,7 +63,7 @@ app.use(hpp())
 
 // CORS engedélyezése
 app.use(cors({
-  origin: 'https://szf-kepzesek.cyclic.app/'
+  origin: 'http://localhost:4000'
 }))
 
 app.use(express.static(path.join(__dirname, 'public/uploads')))

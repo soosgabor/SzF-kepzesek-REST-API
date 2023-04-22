@@ -62,7 +62,9 @@ app.use(limiter)
 app.use(hpp())
 
 // CORS engedélyezése
-app.use(cors())
+app.use(cors({
+  origin: 'https://szf-kepzesek.cyclic.app/'
+}))
 
 app.use(express.static(path.join(__dirname, 'public/uploads')))
 

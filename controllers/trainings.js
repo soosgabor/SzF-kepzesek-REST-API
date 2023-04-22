@@ -7,6 +7,8 @@ const ErrorResponse = require("../utils/errorResponse");
 // @route  GET /api/trainings
 // @access Public
 exports.getTrainings = async (req, res, next) => {
+  // #swagger.tags = ['Trainings']
+  // #swagger.summary = 'Get all trainings.'
   try {
     res
       .status(200)
@@ -20,6 +22,8 @@ exports.getTrainings = async (req, res, next) => {
 // @route  GET /api/trainings/:id
 // @access Public
 exports.getTraining = async (req, res, next) => {
+  // #swagger.tags = ['Trainings']
+  // #swagger.summary = 'Get single training.'
   try {
     const training = await Training.findById(req.params.id);
     if (!training) {

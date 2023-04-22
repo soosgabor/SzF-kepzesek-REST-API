@@ -12,6 +12,11 @@ const hpp = require('hpp')
 const cors = require('cors')
 const errorHandler = require('./middleware/error')
 
+swaggerJsdoc = require("swagger-jsdoc"),
+swaggerUi = require("swagger-ui-express");
+swaggerDocument = require('./swagger.json');
+swaggerFile = require("./swagger_output.json")
+
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", true);
 const mongoString = process.env.DATABASE_URL;
@@ -49,7 +54,11 @@ app.use(mongoSanitize())
 app.use(xss())
 
 // Biztonsági fejlécek beállítása
-app.use(helmet())
+app.use(helmet(
+  {
+    crossOriginResourcePolicy: false,
+  }
+))
 
 // Lekérésszám korlátozása
 const limiter = rateLimit({
@@ -74,5 +83,13 @@ app.use(errorHandler)  
 app.get('/', (req, res) => {
     res.status(400).json({ success: false})
 })
+
+
+app.use(
+  "/api-docs",
+  swaggerUi.serve,
+  // swaggerUi.setup(specs, { explorer: true })
+  swaggerUi.setup(swaggerFile, { explorer: true })
+);
 
 app.listen(process.env.PORT, console.log(`Server running on port ${process.env.PORT}`));

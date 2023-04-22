@@ -1,0 +1,63 @@
+/**
+ * @swagger
+ * components:
+ *   schemas:
+ *     Training:
+ *       type: object
+ *       required:
+ *         - name
+ *         - description
+ *         - address
+ *         - careers
+ *         - user 
+ *       properties:
+ *         name:
+ *           type: string
+ *           description: A képzést végző intézmény neve
+ *         description:
+ *           type: string
+ *           description: A képzés leírása
+ *         website:
+ *           type: string
+ *           description: A képző intézmény webcíme
+ *         email:
+ *           type: string
+ *           description: A képző intézmény email címe 
+ *         address:
+ *           type: string
+ *           description: A képző intézmény címe 
+ *         careers:
+ *           type: array
+ *           items:
+ *             type: string
+ *           description: Szakirányok, melyekhez a képzés jó 
+ *         averageRating:
+ *           type: number
+ *           description: A képzés átlagos értékelése
+ *         totalCost: 
+ *           type: number
+ *           description: A képzés teljes költsége
+ *         photo:
+ *           type: string
+ *           description: A képzéshez tartozó fotó
+ *         housing:
+ *           type: boolean
+ *           description: Lehet-e online végezni a képzést?
+ *         createdAt:
+ *           type: string
+ *           format: date
+ *           description: A képzés felvitelének dátuma
+ *         user:
+ *           type: mongoose.Schema.ObjectId
+ *           description: A képzés felelőse
+ *       example:
+ *         name: TJedlik Ányos Gépipari és Informatikai Technikum
+ *         description: Az iskola képzési profilja, szakmai kínálata
+ *         website: https://jedlik.eu
+ *         email: jedlik@jedlik.eu
+ *         address: 7 Szent Istvan Rd Győr 9021
+ *    		 careers: ["Web Development", "UI/UX", "Business"]
+ *         housing: false
+ *         createdAt: 2020-03-10T04:05:06.157Z
+ *         user: 5d7a514b5d2c12c7449be045
+ */

@@ -1,0 +1,469 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "SzF képzések API",
+    "description": "A dokumentációt a <b>swagger-autogen</b> modul generálta."
+  },
+  "host": "localhost:3000",
+  "basePath": "/api",
+  "tags": [
+    {
+      "name": "Trainings",
+      "description": "Szoftverfejlesztő képzések nyilvántartása"
+    },
+    {
+      "name": "Courses",
+      "description": "Adott képzés kurzusainak nyilvántartása"
+    },
+    {
+      "name": "Users",
+      "description": "Az API felhasználóinak kezelése"
+    },
+    {
+      "name": "Ratings",
+      "description": "Az egyes képzések értékelése"
+    }
+  ],
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "securityDefinitions": {
+    "api_key": {
+      "type": "apiKey",
+      "name": "api_key",
+      "in": "header"
+    },
+    "store_auth": {
+      "type": "oauth2",
+      "authorizationUrl": "https://store.swagger.io/oauth/authorize",
+      "flow": "implicit",
+      "scopes": {
+        "read_pets": "read your trainings",
+        "write_pets": "modify training in your account"
+      }
+    }
+  },
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/radius/{zipcode}/{distance}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "zipcode",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "distance",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/{id}/photo": {
+      "put": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "tags": [
+          "Trainings"
+        ],
+        "summary": "Get all trainings.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "select",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      },
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "user": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/{id}": {
+      "get": {
+        "tags": [
+          "Trainings"
+        ],
+        "summary": "Get single training.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      },
+      "put": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      },
+      "delete": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/{trainingId}/courses/": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "trainingId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "select",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "trainingId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "training": {
+                  "example": "any"
+                },
+                "user": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/{trainingId}/courses/{id}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "trainingId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "trainingId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      },
+      "delete": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "trainingId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Training": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string",
+          "example": "5d713995b721c3bb38c1f5d0"
+        },
+        "user": {
+          "type": "string",
+          "example": "5d7a514b5d2c12c7449be045"
+        },
+        "name": {
+          "type": "string",
+          "example": "Jedlik Ányos Gépipari és Informatikai Technikum"
+        },
+        "description": {
+          "type": "string",
+          "example": "Az iskola képzési profilja..."
+        },
+        "website": {
+          "type": "string",
+          "example": "https://jedlik.eu"
+        },
+        "email": {
+          "type": "string",
+          "example": "jedlik@jedlik.eu"
+        },
+        "address": {
+          "type": "string",
+          "example": "7 Szent Istvan Rd Győr 9021"
+        },
+        "careers": {
+          "type": "array",
+          "example": [
+            "Web Development",
+            "UI/UX",
+            "Business"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "housing": {
+          "type": "boolean",
+          "example": true
+        }
+      },
+      "required": [
+        "name",
+        "description"
+      ]
+    }
+  }
+}

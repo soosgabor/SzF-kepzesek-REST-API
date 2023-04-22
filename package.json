@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server",
-    "dev": "nodemon server"
+    "dev": "nodemon server",
+    "swagger-autogen": "node swagger.js"
   },
   "author": "Soós Gábor",
   "license": "ISC",
@@ -26,6 +27,9 @@
     "morgan": "^1.10.0",
     "node-geocoder": "^4.2.0",
     "nodemailer": "^6.9.1",
+    "swagger-autogen": "^2.23.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.2",
     "xss-clean": "^0.1.1"
   },
   "devDependencies": {
